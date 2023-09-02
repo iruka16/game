@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
 container: {
     backgroundColor: '#72063c',
     paddingVertical: 8,
-    paddingHorizontal: 10,
+    paddingHorizontal: 40,
     shadowOffset: {width: 10, height: 10},
     shadowOpacity: .25,
     shadowRadius: 6,
