@@ -1,16 +1,15 @@
 import {View, Text, Pressable, StyleSheet} from 'react-native'
+import Colors from '../../constants/colors';
 
 
-function PrimaryButton({children}){
-    function pressHandler(){
-        console.log("pressed!")
-    }
+function PrimaryButton({children, onPress}){
+
 
      return(
         <View style ={styles.outerContainer}>
         <Pressable style ={({pressed}) => pressed ?
         [styles.container, styles.pressed]: styles.container} 
-        onPress = {pressHandler}>
+        onPress = {onPress}>
         
             <Text style = {styles.buttonText}>{children}</Text>
         
@@ -37,7 +36,7 @@ container: {
     
 },
 buttonText:{
-    color: 'white',
+    color: Colors.accent500,
     textAlign: 'center',
     fontWeight: 'bold'
 
